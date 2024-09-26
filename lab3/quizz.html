@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <header>
+        <h2>Quizz</h2>
+    </header>
+    <main>
+        <fieldset>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </p>
+
+            <p>
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido">
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required value="" placeholder="Digite seu nome" autocomplete="on" autofocus><br><br>
+
+
+                <label for="birthdate">Data de Nascimento:</label>
+                <input type="date" id="birthdate" name="birthdate"><br><br>
+
+                <label for="favorite_color">Cor Favorita:</label>
+                <input type="color" id="favorite_color" name="favorite_color"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Questões sobre Estocolmo</legend>
+
+                <label for="question1">Qual é a capital da Suécia?</label><br>
+                <input type="radio" id="stockholm" name="capital" value="Estocolmo">
+                <label for="stockholm">Estocolmo</label><br>
+                <input type="radio" id="gothenburg" name="capital" value="Gotemburgo">
+                <label for="gothenburg">Gotemburgo</label><br><br>
+
+                <label for="question2">Quais dos seguintes pontos turísticos você já visitou? (Marque todos que se
+                    aplicam)</label><br>
+                <input type="checkbox" id="gamla_stan" name="sights" value="Gamla Stan">
+                <label for="gamla_stan">Gamla Stan</label><br>
+                <input type="checkbox" id="vasamuseet" name="sights" value="Vasa Museum">
+                <label for="vasamuseet">Museu Vasa</label><br>
+                <input type="checkbox" id="skansen" name="sights" value="Skansen">
+                <label for="skansen">Skansen</label><br>
+                <input type="checkbox" id="nenhum" name="sights" value="Nenhum">
+                <label for="nenhum">Nenhum</label><br><br>
+
+                <label for="question3">Quantos dias você pretende passar em Estocolmo?</label><br>
+                <input type="number" id="days" name="days" min="1" max="30"><br><br>
+
+                <label for="knowledge_select">Qual é o seu nível de conhecimento sobre Estocolmo?</label><br>
+                <select id="knowledge_select" name="knowledge_select">
+                    <option value="1">1 - Iniciante</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Intermediário</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Avançado</option>
+                </select><br><br>
+
+                <label for="future_visit">Quais os lugares que gostaria de conhecer?</label><br>
+                <input type="text" id="future_visit" name="future_visit" list="places_to_visit">
+                <datalist id="places_to_visit">
+                    <option value="Gamla Stan - Cidade Velha">
+                    <option value="Museu Vasa">
+                    <option value="Palácio Real de Estocolmo">
+                    <option value="Skansen - Museu ao Ar Livre">
+                    <option value="Arquipélago de Estocolmo">
+                    <option value="Catedral de Estocolmo">
+                </datalist><br><br>
+
+                <label for="budget">Quanto você planeja gastar em sua visita a Estocolmo? (em coroas suecas)</label><br>
+                <input type="range" id="budget" name="budget" min="0" max="5000" step="100" value="2500">
+                <span id="budgetValue">2500 SEK</span><br><br>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentário Final</legend>
+
+                <label for="comments">Deixe seus comentários sobre Estocolmo:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"
+                    placeholder="Compartilhe suas experiências..."></textarea><br><br>
+
+                <label for="visit_time">Horário preferido para visitar:</label>
+                <input type="time" id="visit_time" name="visit_time"><br><br>
+
+                <label for="image_upload">Carregar uma imagem da sua viagem:</label><br>
+                <input type="file" id="image_upload" name="image_upload" accept="image/*"><br><br>
+
+                <input type="reset" value="Resetar">
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar Respostas">
+            </p>
+        </fieldset>
+
+
+
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+
+</html>
