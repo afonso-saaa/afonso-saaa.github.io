@@ -11,7 +11,7 @@
         <h2>Quizz</h2>
     </header>
     <main>
-        <form action="https://postman-echo.com/get" method="get"> 
+        <form action="https://postman-echo.com/get" method="get">
             <fieldset>
                 <p>
                     <label for="nome">Nome:</label>
@@ -32,8 +32,8 @@
                     <legend>Informações Pessoais</legend>
 
                     <label for="name">Animal Favorito:</label>
-                    <input type="text" id="animal" name="animal" required value="" placeholder="Digite seu animal favorito"
-                        autocomplete="on" autofocus><br><br>
+                    <input type="text" id="animal" name="animal" required value=""
+                        placeholder="Digite seu animal favorito" autocomplete="on" autofocus><br><br>
 
                     <label for="birthdate">Data de Nascimento:</label>
                     <input type="date" id="birthdate" name="birthdate" required><br><br>
@@ -67,8 +67,6 @@
                         step="1"><br><br>
 
                     <label for="knowledge">Qual é o seu nível de conhecimento sobre Estocolmo?</label><br>
-                    <input type="range" id="knowledge" name="knowledge" min="1" max="10" step="1"><br>
-                    <span id="knowledgeValue">Nível: 5</span><br><br>
                     <select id="knowledge_select" name="knowledge_select">
                         <option value="1">1 - Iniciante</option>
                         <option value="2">2</option>
@@ -93,7 +91,8 @@
                         <option value="Catedral de Estocolmo">
                     </datalist><br><br>
 
-                    <label for="budget">Quanto você planeja gastar em sua visita a Estocolmo? (em coroas suecas)</label><br>
+                    <label for="budget">Quanto você planeja gastar em sua visita a Estocolmo? (em coroas
+                        suecas)</label><br>
                     <input type="range" id="budget" name="budget" min="0" max="5000" step="100" value="2500">
                     <span id="budgetValue">2500 SEK</span><br><br>
 
@@ -104,22 +103,22 @@
 
                     <label for="comments">Deixe seus comentários sobre Estocolmo:</label><br>
                     <textarea id="comments" name="comments" rows="4" cols="50"
-                        placeholder="Compartilhe suas experiências..."></textarea><br><br>
+                        placeholder="Escreva aqui"></textarea><br><br>
 
                     <label for="visit_time">Horário preferido para visitar:</label>
                     <input type="time" id="visit_time" name="visit_time"><br><br>
 
-                    <label for="image_upload">Carregar uma imagem da sua viagem:</label><br>
+                    <label for="image_upload">Carregar uma imagem do seu ponto turístico preferido</label><br>
                     <input type="file" id="image_upload" name="image_upload" accept="image/*"><br><br>
 
                     <input type="reset" value="Resetar">
                 </fieldset>
 
                 <p>
-                    <input type="submit" value="Enviar Respostas">
+                    <input type="submit" value="Enviar">
                 </p>
             </fieldset>
-        </form> 
+        </form>
 
     </main>
     <footer>
