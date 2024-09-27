@@ -33,7 +33,7 @@
 
                     <label for="animal">Animal Favorito:</label>
                     <input type="text" id="animal" name="animal" required value=""
-                        placeholder="Digite seu animal favorito" autocomplete="on" autofocus><br><br>
+                        placeholder="Digite o seu animal favorito" autocomplete="on" autofocus><br><br>
 
                     <label for="data_nascimento">Data de Nascimento:</label>
                     <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
@@ -64,8 +64,8 @@
                     <label for="nenhum">Nenhum</label><br><br>
 
                     <label for="quantidade_museus">Quantos museus existem em Estocolmo?</label><br>
-                    <input type="number" id="quantidade_museus" name="quantidade_museus" required min="1" max="30" size="2" maxlength="2"
-                        step="1"><br><br>
+                    <input type="number" id="quantidade_museus" name="quantidade_museus" required min="1" max="30"
+                        size="2" maxlength="2" step="1"><br><br>
 
                     <label for="prato_tipico">Qual é o prato típico de Estocolmo?</label><br>
                     <select id="prato_tipico" name="prato_tipico">
@@ -75,7 +75,8 @@
                         <option value="semlor">Semlor (pães doces)</option>
                     </select><br><br>
 
-                    <label for="monumento_visitar">Se pudesse viajar no tempo, qual monumento histórico de Estocolmo você
+                    <label for="monumento_visitar">Se pudesse viajar no tempo, qual monumento histórico de Estocolmo
+                        você
                         escolheria visitar?</label><br>
                     <input type="text" id="monumento_visitar" name="monumento_visitar" list="places_to_visit">
                     <datalist id="places_to_visit">
@@ -86,9 +87,10 @@
                         <option value="Catedral de Estocolmo no século XIV">
                     </datalist><br><br>
 
-                    <label for="dias">Se tivesse a chance, quanto tempo gostaria de passar explorando Estocolmo?</label><br>
-                    <input type="range" id="dias" name="dias" min="1" max="30" step="1" value="7">
-                    <span id="diasValue">7 dias</span><br><br>
+                    <label for="dias">Se tivesse a chance, quanto tempo gostaria de passar explorando
+                        Estocolmo?(0-30dias)</label><br>
+                    <input type="range" id="dias" name="dias" min="1" max="30" step="1" value="15">
+                    <span id="diasValue">15 dias</span><br><br>
 
                 </fieldset>
 
@@ -103,12 +105,16 @@
                     <input type="time" id="horario_visita" name="horario_visita"><br><br>
 
                     <label for="imagem_upload">Carregar uma imagem de algum lugar famoso em Estocolmo</label><br>
-                    <input type="file" id="imagem_upload" name="imagem_upload" accept="image/*"><br><br>
+                    <input type="file" id="imagem_upload" name="imagem_upload" accept="image/*"><br>
 
-                    <input type="reset" value="Resetar">
+
                 </fieldset>
 
                 <p>
+                    <input type="reset" value="Resetar">
+                </p>
+                <p>
+
                     <input type="submit" value="Enviar">
                 </p>
             </fieldset>
