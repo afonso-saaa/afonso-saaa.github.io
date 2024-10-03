@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>Quizz</h2>
+    </header>
+    <main>
+        <form action="https://postman-echo.com/get" method="get">
+            <fieldset>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+
+                <p>
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </p>
+
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+
+                    <label for="animal">Animal Favorito:</label>
+                    <input type="text" id="animal" name="animal" required value=""
+                        placeholder="Digite o seu animal favorito" autocomplete="on" autofocus><br><br>
+
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+                    <label for="cor_favorita">Cor Favorita:</label>
+                    <input type="color" id="cor_favorita" name="cor_favorita"><br><br>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Questões sobre Estocolmo</legend>
+
+                    <label for="pergunta1">Qual é o principal museu em Estocolmo dedicado a um navio
+                        naufragado?</label><br>
+                    <input type="radio" id="vasamuseet" name="capital" value="Museu Vasa">
+                    <label for="vasamuseet">Museu Vasa</label><br>
+                    <input type="radio" id="abba" name="capital" value="Museu ABBA">
+                    <label for="abba">Museu ABBA</label><br><br>
+
+                    <label for="pergunta2">Quais dos seguintes bairros são conhecidos em Estocolmo? (Marque todos que se
+                        aplicam)</label><br>
+                    <input type="checkbox" id="gamla_stan" name="sights" value="Gamla Stan">
+                    <label for="gamla_stan">Gamla Stan</label><br>
+                    <input type="checkbox" id="sodermalm" name="sights" value="Södermalm">
+                    <label for="sodermalm">Södermalm</label><br>
+                    <input type="checkbox" id="ostermalm" name="sights" value="Östermalm">
+                    <label for="ostermalm">Östermalm</label><br>
+                    <input type="checkbox" id="nenhum" name="sights" value="Nenhum">
+                    <label for="nenhum">Nenhum</label><br><br>
+
+                    <label for="quantidade_museus">Quantos museus existem em Estocolmo?</label><br>
+                    <input type="number" id="quantidade_museus" name="quantidade_museus" required min="1" max="30"
+                        size="2" maxlength="2" step="1"><br><br>
+
+                    <label for="prato_tipico">Qual é o prato típico de Estocolmo?</label><br>
+                    <select id="prato_tipico" name="prato_tipico">
+                        <option value="almôndegas">Almôndegas Suecas</option>
+                        <option value="gravlax">Gravlax (salmão curado)</option>
+                        <option value="surstromming">Surströmming (arenque fermentado)</option>
+                        <option value="semlor">Semlor (pães doces)</option>
+                    </select><br><br>
+
+                    <label for="monumento_visitar">Se pudesse viajar no tempo, qual monumento histórico de Estocolmo
+                        você
+                        escolheria visitar?</label><br>
+                    <input type="text" id="monumento_visitar" name="monumento_visitar" list="places_to_visit">
+                    <datalist id="places_to_visit">
+                        <option value="Palácio Real de Estocolmo no século XVIII">
+                        <option value="Câmara Municipal de Estocolmo durante a construção">
+                        <option value="Gamla Stan na Idade Média">
+                        <option value="Museu Vasa no dia da inauguração">
+                        <option value="Catedral de Estocolmo no século XIV">
+                    </datalist><br><br>
+
+                    <label for="dias">Se tivesse a chance, quanto tempo gostaria de passar explorando
+                        Estocolmo?(0-30dias)</label><br>
+                    <input type="range" id="dias" name="dias" min="1" max="30" step="1" value="15">
+                    <span id="diasValue">15 dias</span><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentário Final</legend>
+
+                    <label for="comentarios">Deixe seus comentários sobre os pontos turísticos de Estocolmo:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                        placeholder="Escreva aqui"></textarea><br><br>
+
+                    <label for="horario_visita">Qual o melhor horário para visitar museus em Estocolmo?</label>
+                    <input type="time" id="horario_visita" name="horario_visita"><br><br>
+
+                    <label for="imagem_upload">Carregar uma imagem de algum lugar famoso em Estocolmo</label><br>
+                    <input type="file" id="imagem_upload" name="imagem_upload" accept="image/*"><br>
+
+
+                </fieldset>
+
+                <p>
+                    <input type="reset" value="Resetar">
+                </p>
+                <p>
+
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+
+</html>
