@@ -11,9 +11,19 @@
 
 <body>
     <header>
-        <h2>Viagem</h2>
+        <h1>Viagem</h1>
     </header>
     <main>
+        <div class="divViagemQuiz">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimédia</a>
+                <a href="info.html">Informação</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="viagem.html">Viagem</a>
+            </nav>
+        </div>
         <form action="https://postman-echo.com/get" method="get">
             <fieldset>
                 <fieldset>
@@ -64,11 +74,11 @@
                     </p>
 
                     <p>
-                        <p><label>Qual o serviço que deseja na sua viagem:</label></p>
-                        <input type="radio" id="servico_basico" name="servico" value="básico">
-                        <label for="servico_basico">Básico</label>
-                        <input type="radio" id="servico_premium" name="servico" value="premium">
-                        <label for="servico_premium">Premium</label>
+                    <p><label>Qual o serviço que deseja na sua viagem:</label></p>
+                    <input type="radio" id="servico_basico" name="servico" value="básico">
+                    <label for="servico_basico">Básico</label>
+                    <input type="radio" id="servico_premium" name="servico" value="premium">
+                    <label for="servico_premium">Premium</label>
                     </p>
 
                 </fieldset>
@@ -76,9 +86,9 @@
                 <fieldset>
                     <legend>Outras Informações</legend>
                     <p>
-                        <p><label for="pedidos_especiais">Pedidos Especiais:</label></p>
-                        <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"
-                            placeholder="Escreva aqui"></textarea>
+                    <p><label for="pedidos_especiais">Pedidos Especiais:</label></p>
+                    <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"
+                        placeholder="Escreva aqui"></textarea>
                     </p>
 
                     <p>
@@ -88,7 +98,7 @@
                     </p>
 
                 </fieldset>
-                
+
                 <p>
                     <input type="reset" value="Resetar">
                 </p>
