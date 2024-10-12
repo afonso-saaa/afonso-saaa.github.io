@@ -255,6 +255,14 @@ nav a[href="viagem.html"]:before {
     content: "\f072"; 
 }
 
+nav a[href="pontosinteresse.html"]:before {
+    content: "\f03d"; 
+}
+
+nav a[href="capitais.html"]:before {
+    content: "\f03d"; 
+}
+
 nav a:hover:before {
     content: "► "; 
     color: #f1da42; 
