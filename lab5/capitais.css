@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #baf0ff;
+    color: #000000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4A90E2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+nav a.last-link {
+    background-color: #5249ff;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: #000;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #dddddd;
+}
+
+nav a:hover {
+    color: #4A90E2;
+    background-color: white;
+}
+
+nav a:active {
+    color: #fff23a;
+    background-color: #005fc5;
+    padding: 10px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #baf0ff;
+    text-align: center;
+}
+
+.poema-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #333;
+}
+
+.autor {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+}
+
+.imagem-container {
+    position: relative;
+    width: 100vw;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: auto;
+}
+
+.fotografo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.fotografo a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.fotografo a:hover {
+    text-decoration: underline;
+}
+
+#cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: calc(33.33% - 20px);
+}
+
+.cidade {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cidade img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.cidade p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#experimenta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #4A90E2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    opacity: 0;
+}
+
+.circulo:hover {
+    opacity: 1;
+}
+
+.circulo:hover p {
+    display: block;
+}
+
+.circulo p {
+    display: none;
+}
+
+.circulo:hover p {
+    display: block;
+}
