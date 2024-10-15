@@ -199,7 +199,6 @@ header h1 {
 nav a {
     color: white; 
     text-decoration: none;
-    padding: 10px;
     font-size: 18px;
     position: relative;
     display: inline-block;
@@ -216,6 +215,7 @@ nav a:visited {
 nav a:hover {
     color: #f1da42;
     background-color: #4169E1;
+    border-radius: 10px;
 }
 
 nav a:active {
@@ -225,7 +225,12 @@ nav a:active {
 
 nav a:before {
     font-family: "Font Awesome 5 Free"; 
-    padding-right: 10px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+nav a:after {
+    font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
 }
 
@@ -262,11 +267,8 @@ nav a[href="capitais.html"]:before {
 }
 
 nav a:hover:before {
-    content: "► "; 
+    content: "\f064"; 
     color: #f1da42; 
 }
 
-nav a:hover:after {
-    content: " ◄"; 
-    color: #f1da42;
-}
+

@@ -63,10 +63,17 @@ article {
 }
 
 .poema-text {
-    font-size: 24px;
+    font-size: 23.5px;
     font-weight: bold;
     line-height: 1.6;
     color: #333;
+}
+
+.poemaConteudo {
+    padding: 20px;
+    margin: auto;
+    background-color: hsl(189, 100%, 90%);
+    border-radius: 50px;
 }
 
 .autor {
