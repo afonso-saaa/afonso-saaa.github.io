@@ -116,7 +116,7 @@ section {
     margin: 10px;
     background-color: #f9f9f9;
     border-radius: 15px;
-    width: calc(33.33% - 20px);
+    width: 250px;
 }
 
 .cidade {
@@ -133,16 +133,16 @@ section {
 }
 
 .cidade p {
-    margin: 0;
     font-weight: bold;
     color: #333;
+    margin: auto;
 }
 
 #experimenta {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    margin: auto;
 }
 
 .circulo {
@@ -154,7 +154,6 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
-    font-weight: bold;
     margin: 10px;
     opacity: 0;
 }
