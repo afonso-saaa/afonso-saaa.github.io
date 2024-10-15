@@ -18,7 +18,6 @@ header {
 nav {
     background-color: #333; 
     padding: 15px; 
-    margin: 0 auto;
     text-align: center; 
 }
 
@@ -226,7 +225,6 @@ nav a:active {
 
 nav a:before {
     font-family: "Font Awesome 5 Free"; 
-    display: inline-block;
     padding-right: 10px;
     font-weight: 900;
 }
@@ -260,7 +258,7 @@ nav a[href="pontosinteresse.html"]:before {
 }
 
 nav a[href="capitais.html"]:before {
-    content: "\f03d"; 
+    content: "\f024"; 
 }
 
 nav a:hover:before {
