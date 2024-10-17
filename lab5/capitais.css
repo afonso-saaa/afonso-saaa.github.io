@@ -169,14 +169,3 @@ section {
     opacity: 1;
 }
 
-.circulo:hover p {
-    display: block;
-}
-
-.circulo p {
-    display: none;
-}
-
-.circulo:hover p {
-    display: block;
-}
