@@ -7,47 +7,47 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #4169E1; 
+    background-color: #4169E1;
     color: white;
-    padding: 20px; 
-    text-align: center; 
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
-    background-color: #333; 
-    padding: 15px; 
-    text-align: center; 
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-    color: white; 
+    color: white;
     text-decoration: none;
-    padding: 10px; 
+    padding: 10px;
 }
 
 main {
-    padding: 20px; 
-    background-color: white; 
-    text-align: center; 
+    padding: 20px;
+    background-color: white;
+    text-align: center;
 }
 
 footer {
-    background-color: #333; 
-    color: white; 
-    text-align: center; 
-    padding: 10px; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 img {
-    height: auto; 
+    height: auto;
 }
 
 table {
-    margin: auto; 
+    margin: auto;
 }
 
 #curiosidades ul {
@@ -60,7 +60,9 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-#fotografias h3, #video h3, #poema h3 {
+#fotografias h3,
+#video h3,
+#poema h3 {
     color: #4169E1;
     font-size: 24px;
     border-bottom: 2px solid #f1da42;
@@ -127,15 +129,15 @@ ol {
 }
 
 #locaisNaoPerder li:nth-child(even) {
-    color: #fffb00; 
+    color: #fffb00;
 }
 
 #locaisNaoPerder li:nth-child(odd) {
-    color: #2801c6; 
+    color: #2801c6;
 }
 
 #restaurantes li:nth-child(even) {
-    color: #fffb00; 
+    color: #fffb00;
 }
 
 #restaurantes li {
@@ -143,15 +145,15 @@ ol {
 }
 
 #restaurantes li:nth-child(odd) {
-    color: #2801c6; 
+    color: #2801c6;
 }
 
 #monumentos li:nth-child(even) {
-    color: #fffb00; 
+    color: #fffb00;
 }
 
 #monumentos li:nth-child(odd) {
-    color: #2801c6; 
+    color: #2801c6;
 }
 
 #monumentos li {
@@ -174,24 +176,24 @@ ol {
     margin: auto;
     padding: 1px;
     margin-top: 10px;
-    height: 430px;
+    height: 360px;
 }
 
 #climaTable th {
-    background-color: #007bff; 
-    color: white; 
+    background-color: #007bff;
+    color: white;
 }
 
 #climaTable tr:nth-child(even) {
-    background-color: #bababa; 
+    background-color: #bababa;
 }
 
 #climaTable tr:nth-child(odd) {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 header h1 {
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .zoomable {
@@ -199,18 +201,18 @@ header h1 {
 }
 
 nav a {
-    color: white; 
+    color: white;
     text-decoration: none;
     font-size: 18px;
     display: inline-block;
 }
 
 nav a:link {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 nav a:visited {
-    color: #dddddd; 
+    color: #dddddd;
 }
 
 nav a:hover {
@@ -225,51 +227,55 @@ nav a:active {
 }
 
 nav a:before {
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
 }
 
 nav a:after {
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
 nav a[href="index.html"]:before {
-    content: "\f015"; 
+    content: "\f015";
 }
 
 nav a[href="local.html"]:before {
-    content: "\f3c5"; 
+    content: "\f3c5";
 }
 
 nav a[href="multimedia.html"]:before {
-    content: "\f03d"; 
+    content: "\f03d";
 }
 
 nav a[href="info.html"]:before {
-    content: "\f129"; 
+    content: "\f129";
 }
 
 nav a[href="quizz.html"]:before {
-    content: "\f12d"; 
+    content: "\f12d";
 }
 
 nav a[href="viagem.html"]:before {
-    content: "\f072"; 
+    content: "\f072";
 }
 
 nav a[href="pontosinteresse.html"]:before {
-    content: "\f03d"; 
+    content: "\f03d";
 }
 
 nav a[href="capitais.html"]:before {
-    content: "\f024"; 
+    content: "\f024";
 }
 
 nav a:hover:before {
-    content: "\f064"; 
-    color: #f1da42; 
+    content: "\f064";
+    color: #f1da42;
 }
 
-
+.fotoBanner {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
