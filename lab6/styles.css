@@ -172,7 +172,7 @@ table {
 }
 
 #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
-#informacoes, #fotografias , #video , #poema,#multimedia, #localizacaoEst  {
+#informacoes, #fotografiasEst , #video , #poema ,#multimedia , #localizacaoEst  {
     background-color: #dddddd;
     border-radius: 10px;
     width: 945px; 
@@ -188,19 +188,22 @@ table {
 
 
 @media (max-width: 1024px) {
-    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
+    #informacoes, #fotografiasEst , #video , #poema ,#multimedia , #localizacaoEst{
         width: 80%;
     }
 }
 
 @media (max-width: 768px) {
-    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
+    #informacoes, #fotografiasEst , #video , #poema ,#multimedia , #localizacaoEst {
         width: 95%; 
     }
 }
 
 @media (max-width: 480px) {
-    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
+    #informacoes, #fotografiasEst , #video , #poema ,#multimedia , #localizacaoEst {
         width: 100%; 
         padding: 5px; 
     }
