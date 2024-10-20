@@ -159,19 +159,13 @@ table {
     text-align: left;
 }
 
-#fotografias h3, #video h3, #poema h3 {
-    color: #4169E1;
-    font-size: 24px;
-    border-bottom: 2px solid #f1da42;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
 
 .divViagemQuiz {
     padding-bottom: 20px;
 }
 
-#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
+#informacoes, #fotografias , #video , #poema,#multimedia, #localizacaoEst  {
     background-color: #dddddd;
     border-radius: 10px;
     width: 945px; 
@@ -179,6 +173,12 @@ table {
     padding: 10px; 
     margin-top: 10px;
 }
+
+#multimedia a:hover {
+    color: #f1da42; 
+    
+}
+
 
 @media (max-width: 1024px) {
     #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
