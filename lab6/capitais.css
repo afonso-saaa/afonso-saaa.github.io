@@ -314,7 +314,6 @@ header {
     }
 }
 
-/* Adicionando animação ao conteúdo do poema */
 .poemaConteudo {
     animation: fadeIn 1.5s ease-in;
 }
