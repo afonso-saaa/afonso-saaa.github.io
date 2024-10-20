@@ -1,0 +1,63 @@
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.menuDesktop a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.dropdown {
+    display: none; 
+}
+
+
+.dropBtn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdownConteudo {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+.dropdownConteudo a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdownConteudo {
+    display: block;
+}
+
+
+@media (max-width: 700px) {
+    .menuDesktop {
+        display: none; 
+    }
+
+    .dropdown {
+        display: block; 
+    }
+}
+
+
