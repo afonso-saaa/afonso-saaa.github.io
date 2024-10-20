@@ -170,14 +170,32 @@ table {
     padding-bottom: 20px;
 }
 
-#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar,#curiosidades,#informacoes {
+#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
     background-color: #dddddd;
     border-radius: 10px;
-    width: 945px;
+    width: 945px; 
     margin: auto;
-    padding: 1px;
+    padding: 10px; 
     margin-top: 10px;
-    padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+        width: 95%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, #informacoes {
+        width: 100%; 
+        padding: 5px; 
+    }
 }
 
 #locaisNaoPerder li, #monumentos li, #restaurantes li {
@@ -217,5 +235,25 @@ table {
 #infoTable{
     background-color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+    #climaTable,#infoTable {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #climaTable,#infoTable {
+        width: 95%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #climaTable,#infoTable {
+        width: 100%; 
+        padding: 5px; 
+    }
+}
+
 
 
