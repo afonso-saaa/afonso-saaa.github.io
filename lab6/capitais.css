@@ -60,7 +60,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #baf0ff;
+    background-color: #8ae6ff;
     text-align: center;
 }
 
@@ -72,10 +72,12 @@ article {
 }
 
 .poemaConteudo {
-    padding: 20px;
-    margin: auto;
-    background-color: hsl(189, 100%, 90%);
-    border-radius: 50px;
+    padding: 30px; 
+    margin: 20px auto; 
+    background-color: hsl(189, 100%, 85%); 
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
 }
 
 .autor {
@@ -284,4 +286,35 @@ video {
 
 .photo:nth-child(3n + 3):hover img {
     filter: none; 
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header {
+    animation: slideDown 0.8s ease-out; 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Adicionando animação ao conteúdo do poema */
+.poemaConteudo {
+    animation: fadeIn 1.5s ease-in;
 }
