@@ -158,9 +158,7 @@ table {
     text-align: left;
 }
 
-#fotografias h3,
-#video h3,
-#poema h3 {
+#fotografias h3, #video h3, #poema h3 {
     color: #4169E1;
     font-size: 24px;
     border-bottom: 2px solid #f1da42;
@@ -173,7 +171,7 @@ table {
 }
 
 #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar,#curiosidades,#informacoes {
-    background-color: #bdbdbd;
+    background-color: #dddddd;
     border-radius: 10px;
     width: 945px;
     margin: auto;
@@ -192,15 +190,32 @@ table {
     border-radius: 10px;
 }
 
-#climaTable th {
-    background-color: #007bff;
+#climaTable,#infoTable {
+    border-collapse: collapse; 
+}
+
+#climaTable th,#infoTable th {
+    background-color: #5b9bd5; 
     color: white;
+    text-align: left;
+    padding: 12px;
 }
 
-#climaTable tr:nth-child(even) {
-    background-color: #bababa;
+
+#climaTable tr:nth-child(even)  {
+    background-color: #f3f4f7; 
 }
 
-#climaTable tr:nth-child(odd) {
+#climaTable tr:nth-child(odd)  {
+    background-color: #ffffff; 
+}
+
+#climaTable td,#infoTable td {
+    padding: 5px;
+}
+
+#infoTable{
     background-color: #ffffff;
 }
+
+
