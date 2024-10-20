@@ -2,12 +2,13 @@
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #ffffff;
+    line-height: 1.6;
 }
 
 header {
@@ -15,6 +16,12 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 2px;
 }
 
 nav {
@@ -26,7 +33,60 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #f1da42;
+    color: #333;
+}
+
+nav a:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+nav a[href="index.html"]:before {
+    content: "\f015"; 
+}
+
+nav a[href="local.html"]:before {
+    content: "\f3c5"; 
+}
+
+nav a[href="multimedia.html"]:before {
+    content: "\f03d"; 
+}
+
+nav a[href="info.html"]:before {
+    content: "\f129"; 
+}
+
+nav a[href="quizz.html"]:before {
+    content: "\f12d"; 
+}
+
+nav a[href="viagem.html"]:before {
+    content: "\f072"; 
+}
+
+nav a[href="pontosinteresse.html"]:before {
+    content: "\f041"; 
+}
+
+nav a[href="capitais.html"]:before {
+    content: "\f024"; 
+}
+
+nav a:hover:before {
+    content: "\f064";
 }
 
 main {
@@ -35,17 +95,61 @@ main {
     text-align: center;
 }
 
+main h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+}
+
+a {
+    color: #4169E1;
+    text-decoration: none;
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.fotos5 {
+    border-radius: 10px;
+    margin: 15px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.fotos5:hover {
+    transform: scale(1.05);
+}
+
+.fotoBanner {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid #4169E1;
 }
 
-img {
-    height: auto;
+footer p {
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
+/* Estilos mantidos para tabelas, monumentos, locais a não perder */
 table {
     margin: auto;
 }
@@ -53,11 +157,6 @@ table {
 #curiosidades ul {
     padding-left: 20%;
     text-align: left;
-}
-
-a:hover {
-    background-color: #f1da42;
-    color: rgb(255, 255, 255);
 }
 
 #fotografias h3,
@@ -70,113 +169,28 @@ a:hover {
     margin-bottom: 20px;
 }
 
-section#poema section {
-    padding-bottom: 10px;
-}
-
 .divViagemQuiz {
     padding-bottom: 20px;
 }
 
-#pInteresse {
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    padding: 1px;
-    width: 945px;
-    margin: auto;
-}
-
-.fotos5 {
-    border-radius: 10px;
-    margin-top: -10px;
-    margin-bottom: 5px;
-}
-
-#restaurantes {
+#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar {
     background-color: #bdbdbd;
     border-radius: 10px;
     width: 945px;
     margin: auto;
     padding: 1px;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
-ol {
-    padding-right: 40px;
-}
-
-#monumentos {
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    width: 945px;
-    margin: auto;
-    padding: 1px;
-    margin-top: 10px;
-}
-
-#locaisNaoPerder {
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    width: 945px;
-    margin: auto;
-    padding: 1px;
-    margin-top: 10px;
-}
-
-#locaisNaoPerder li {
-    padding-right: 20px;
-    list-style-type: circle;
-}
-
-#locaisNaoPerder li:nth-child(even) {
-    color: #fffb00;
-}
-
-#locaisNaoPerder li:nth-child(odd) {
-    color: #2801c6;
-}
-
-#restaurantes li:nth-child(even) {
-    color: #fffb00;
-}
-
-#restaurantes li {
+#locaisNaoPerder li, #monumentos li, #restaurantes li {
     list-style-type: upper-roman;
+    list-style-position: inside;
 }
 
-#restaurantes li:nth-child(odd) {
-    color: #2801c6;
-}
 
-#monumentos li:nth-child(even) {
-    color: #fffb00;
-}
-
-#monumentos li:nth-child(odd) {
-    color: #2801c6;
-}
-
-#monumentos li {
-    list-style-type: upper-roman;
-}
-
-#melhorLocalFoto {
-    background-color: #bdbdbd;
+.fotoMelhorLocal {
     border-radius: 10px;
-    width: 945px;
-    margin: auto;
-    padding: 1px;
-    margin-top: 10px;
-}
-
-#melhorAlturaVisitar {
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    width: 945px;
-    margin: auto;
-    padding: 1px;
-    margin-top: 10px;
-    height: 360px;
 }
 
 #climaTable th {
@@ -190,92 +204,4 @@ ol {
 
 #climaTable tr:nth-child(odd) {
     background-color: #ffffff;
-}
-
-header h1 {
-    text-transform: uppercase;
-}
-
-.zoomable {
-    cursor: zoom-in;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
-}
-
-nav a:link {
-    color: #ffffff;
-}
-
-nav a:visited {
-    color: #dddddd;
-}
-
-nav a:hover {
-    color: #f1da42;
-    background-color: #4169E1;
-    border-radius: 10px;
-}
-
-nav a:active {
-    color: #ffffff;
-    background-color: #1a3d7f;
-}
-
-nav a:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-nav a:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-nav a[href="index.html"]:before {
-    content: "\f015";
-}
-
-nav a[href="local.html"]:before {
-    content: "\f3c5";
-}
-
-nav a[href="multimedia.html"]:before {
-    content: "\f03d";
-}
-
-nav a[href="info.html"]:before {
-    content: "\f129";
-}
-
-nav a[href="quizz.html"]:before {
-    content: "\f12d";
-}
-
-nav a[href="viagem.html"]:before {
-    content: "\f072";
-}
-
-nav a[href="pontosinteresse.html"]:before {
-    content: "\f03d";
-}
-
-nav a[href="capitais.html"]:before {
-    content: "\f024";
-}
-
-nav a:hover:before {
-    content: "\f064";
-    color: #f1da42;
-}
-
-.fotoBanner {
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
 }
