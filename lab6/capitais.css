@@ -211,12 +211,77 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o texto */
+    transform: translate(-50%, -50%); 
     color: white;
     text-align: center;
-    z-index: 1; /* Coloca o texto à frente do vídeo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
 }
 
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; 
+    background-color: #f4f4f4; 
+}
+
+.photo {
+    width: 31%; 
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.photo:hover img {
+    transform: scale(1.1); 
+}
+
+.photo:hover .caption {
+    opacity: 1; 
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.photo:nth-child(3n + 1) img {
+    border: 5px solid #53c0ff; 
+}
+
+.photo:nth-child(3n + 2) img {
+    filter: grayscale(100%); 
+    transition: filter 0.3s;
+}
+
+.photo:nth-child(3n + 2):hover img {
+    filter: none; 
+}
+
+.photo:nth-child(3n + 3) img {
+    filter: invert(1); 
+    transition: filter 0.3s;
+}
+
+.photo:nth-child(3n + 3):hover img {
+    filter: none; 
+}
