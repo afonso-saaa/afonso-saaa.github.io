@@ -149,7 +149,6 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* Estilos mantidos para tabelas, monumentos, locais a não perder */
 table {
     margin: auto;
 }
@@ -173,7 +172,7 @@ table {
     padding-bottom: 20px;
 }
 
-#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar {
+#pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar,#curiosidades,#informacoes {
     background-color: #bdbdbd;
     border-radius: 10px;
     width: 945px;
