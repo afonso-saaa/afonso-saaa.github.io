@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: rgb(223, 222, 222);
     line-height: 1.6;
 }
 
@@ -28,8 +28,8 @@ header h1 {
     letter-spacing: 2px;
     position: relative;
     z-index: 1;
+    animation: slideDown 1.5s ease-out; 
 }
-
 
 
 nav {
@@ -99,7 +99,7 @@ nav a:hover:before {
 
 main {
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(223, 222, 222);
     text-align: center;
 }
 
