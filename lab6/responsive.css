@@ -26,7 +26,7 @@ nav {
     color: white;
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
+    border-radius: 20px;
 }
 
 
@@ -35,6 +35,7 @@ nav {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
+    border-radius: 20px;
 }
 
 .dropdownConteudo a {

@@ -179,7 +179,7 @@ table {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#pInteresse a:hover{
+#locaisNaoPerder a:hover , #pInteresse a:hover , #restaurantes a:hover , #monumentos a:hover {
     color: #ac9500; 
 }
 
@@ -304,7 +304,6 @@ input[type="submit"], input[type="reset"] {
 #questoesEst,#infoPessoal,#commentFinal, #infoViagem,#outraInfo{
     font-weight: bold;
 }
-
 
 
 
