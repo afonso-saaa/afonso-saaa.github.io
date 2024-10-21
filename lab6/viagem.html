@@ -49,7 +49,7 @@
         <form action="https://postman-echo.com/get" method="get">
             <fieldset>
                 <fieldset>
-                    <legend>Informações Pessoais</legend>
+                    <legend id="infoPessoal">Informações Pessoais</legend>
                     <p>
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" required>
@@ -68,7 +68,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Informações da Viagem</legend>
+                    <legend id="infoViagem">Informações da Viagem</legend>
                     <p>
                         <label for="data_partida">Data de Partida:</label>
                         <input type="date" name="data_partida" id="data_partida" required>
@@ -106,7 +106,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Outras Informações</legend>
+                    <legend id="outraInfo">Outras Informações</legend>
                     <p>
                     <p><label for="pedidos_especiais">Pedidos Especiais:</label></p>
                     <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"

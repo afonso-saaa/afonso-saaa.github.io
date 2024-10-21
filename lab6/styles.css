@@ -99,7 +99,7 @@ nav a:hover:before {
 
 main {
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -167,23 +167,24 @@ table {
 }
 
 
-.divViagemQuiz {
-    padding-bottom: 20px;
-}
 
 #pInteresse, #restaurantes, #monumentos, #locaisNaoPerder, #melhorLocalFoto, #melhorAlturaVisitar, #curiosidades, 
 #informacoes, #fotografiasEst , #video , #poema ,#multimedia , #localizacaoEst  {
-    background-color: #dddddd;
+    background-color: #c0defa;
     border-radius: 10px;
     width: 945px; 
     margin: auto;
     padding: 10px; 
     margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pInteresse a:hover{
+    color: #ac9500; 
 }
 
 #multimedia a:hover {
-    color: #f1da42; 
-    
+    color: #ac9500; 
 }
 
 
@@ -277,6 +278,34 @@ table {
         opacity: 1; 
     }
 }
+
+.divViagemQuiz {
+    padding-bottom: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #4169E1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="submit"], input[type="reset"] {
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#questoesEst,#infoPessoal,#commentFinal, #infoViagem,#outraInfo{
+    font-weight: bold;
+}
+
+
 
 
 
