@@ -35,12 +35,9 @@ function incrementCounter() {
     document.getElementById("counter").innerText = count;
 }
 
-document.body.addEventListener("mousemove", function(event) {
-    const width = window.innerWidth;
-    
-    const ratio = event.clientX / width;
-    
-    const greenAndBlue = Math.floor(255 * ratio);
-
-    document.body.style.backgroundColor = `rgb(255, ${greenAndBlue}, ${greenAndBlue})`;
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        alert("A tecla Enter foi pressionada!");
+    }
 });
+
