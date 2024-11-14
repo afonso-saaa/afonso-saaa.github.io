@@ -1,0 +1,70 @@
+#pintaMe {
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d10a0a;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 16.5%;
+    
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d10a0a;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+}
+
+.stats li {
+    background: #d10a0a;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 67%;
+    margin-left: 16.5%;
+}
+
+
+.menu a {
+    color: #d10a0a;
+    text-decoration: none;
+    padding: 10px 20px;
+}

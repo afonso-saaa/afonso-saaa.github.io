@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira página em JavaScript</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <h1>Primeira página em JavaScript</h1>
+
+    <p id="hoverText" onmouseover="showMessageIndex()" onmouseout="resetMessageIndex()">1. Passa por aqui!</p>
+
+    <p id="pintaMe">2. Pinta-me!</p>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+
+    <p>3. Experimenta escrever...</p>
+    <input type="text" id="colorfulText" oninput="changeBoxColor()" />
+
+    <p>4. Escolha uma cor em inglês:</p>
+    <input type="text" id="colorInput"/>
+    <button onclick="changeBackgroundColor()">submeter</button>
+
+    <p>5. <button onclick="incrementCounter()">Conta!</button> <span id="counter">0</span></p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventos.html">Bruno Fernandes - Biografia</a></li>
+        </ul>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>
