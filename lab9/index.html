@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
+    <title>Loja Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
+        <h1>Loja Online</h1>
         <nav>
-            <h1>Loja</h1>
-            <ul>
-                <li><a href="#produtos-container">Produtos</a></li>
-                <li><a href="#cesto-container">Cesto</a></li>
-            </ul>
+            <ul><a href="#produtos">Produtos</a></ul>
+            <ul><a href="#cesto">Cesto</a></ul>
         </nav>
     </header>
 
     <main>
-        <section id="produtos-container">
-            <h2>Selecione os seus Produtos</h2>
-            <section id="produto-lista" class="produtos-lista"></section>
+        <section id="produtos">
+            <h2>Selecione os seus produtos</h2>
+            <section id="lista-produtos" class="lista-produtos"></section>
         </section>
 
-        <section id="cesto-container">
-            <h2 id="produtos-selecionados">Produtos Selecionados</h2>
-            <ul id="itens-cesto"></ul>
-            <p id="total-cesto-texto">Total: <span id="total-cesto">0.00</span> €</p>
+        <section id="cesto">
+            <h2 id="produtos-selecionados-cor">Produtos Selecionados</h2>
+            <section id="produtos-cesto" class="cesto-produtos"></section>
+            <section id="preco-total" class="preco-total"></section>
         </section>
     </main>
+
+    <footer>
+        <p>2024</p>
+    </footer>
 
     <script src="produtos.js"></script>
     <script src="main.js"></script>
