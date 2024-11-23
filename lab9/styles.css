@@ -10,7 +10,7 @@ body {
     background-color: #e7e7e7;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #6a1b9a;
     color: #fafafa;
@@ -34,7 +34,7 @@ header nav a {
     font-weight: bold;
 }
 
-/* Título de seção */
+
 h2 {
     text-align: center;
     margin: 40px 0;
@@ -107,7 +107,7 @@ h2 {
     cursor: pointer;
 }
 
-/* Cesto de produtos */
+
 #cesto {
     background-color: #6a1b9a;
     padding: 50px;
@@ -168,7 +168,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Preço Total */
 .preco-total {
     font-size: 1.5em;
     font-weight: bold;
