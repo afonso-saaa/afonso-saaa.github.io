@@ -206,7 +206,7 @@ function exibirCestoDeCompras() {
         precoTotal += produto.price;
 
         const botaoRemover = document.createElement('button');
-        botaoRemover.textContent = "Remover";
+        botaoRemover.textContent = "- Remover";
         botaoRemover.onclick = () => removerProdutoDoCesto(index);
         botaoRemover.classList.add('botao-remover'); 
 
