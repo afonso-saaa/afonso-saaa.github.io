@@ -92,7 +92,7 @@ function popularCategoriasNoSelect(categorias) {
 async function obterCategoriasDaAPI() {
     const url = "https://deisishop.pythonanywhere.com/categories/";
     const resposta = await fetch(url);
-    if (!resposta.ok) throw new Error(`Erro na requisição: ${resposta.status}`);
+    
     const categorias = await resposta.json();
     return categorias.map(categoria => categoria.trim());
 }
@@ -100,7 +100,7 @@ async function obterCategoriasDaAPI() {
 async function obterProdutosDaAPI() {
     const url = "https://deisishop.pythonanywhere.com/products/";
     const resposta = await fetch(url);
-    if (!resposta.ok) throw new Error(`Erro na requisição: ${resposta.status}`);
+    
     const produtos = await resposta.json();
     return produtos.map(produto => ({
         ...produto,
@@ -239,7 +239,6 @@ async function processarCompra() {
     };
 
 
-    // Envia a requisição para a API com os dados do pedido
     const resposta = await fetch("https://deisishop.pythonanywhere.com/buy", {
         method: "POST",
         headers: {
@@ -247,11 +246,6 @@ async function processarCompra() {
         },
         body: JSON.stringify(pedido)
     });
-
-    if (!resposta.ok) {
-        const erro = await resposta.json();
-        throw new Error(erro.error || "Erro ao processar o pedido.");
-    }
 
     const resultado = await resposta.json();
     exibirResultadoCompra(resultado);

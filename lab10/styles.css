@@ -142,9 +142,6 @@ h2, #produtos-selecionados-cor {
     margin-top: auto;
 }
 
-#lista-produtos button:hover {
-    background: #ffb158;
-}
 
 .cesto-compra {
     background-color: #ffb158;
@@ -219,9 +216,6 @@ h2, #produtos-selecionados-cor {
     cursor: pointer;
 }
 
-#compra button:hover {
-    background-color: #ffb158;
-}
 
 .botao-remover {
     padding: 10px 15px;
